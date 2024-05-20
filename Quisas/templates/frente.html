@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat bot</title>
+    <!-- Enlaces a archivos CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <!-- Enlaces a archivos JavaScript -->
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+</head>
+<body style="background-color: #B7D6DF;">
+    <!-- Contenido de la página -->
+    <header>
+        <!-- Encabezado de la página -->
+        <center>
+            <img src="{{ url_for('static', filename='Catbot.png') }}" alt="Descripción de la imagen">
+        </center>
+        <center>
+            <img src="{{ url_for('static', filename='Gato.png') }}" alt="Descripción de la imagen" width="300">
+        </center>
+        <center>
+            <img src="{{ url_for('static', filename='Bienvenido.png') }}" alt="Descripción de la imagen" width="300">
+        </center>
+        <br>
+        <a href="{{ url_for('index') }}">
+            <input type="image" src="{{ url_for('static', filename='Boton.png') }}" alt="Descripción del botón" width="300" style="float: right;">
+        </a>
+        
+    </header>
+</body>
+</html>

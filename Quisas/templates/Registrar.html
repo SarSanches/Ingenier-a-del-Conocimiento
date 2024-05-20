@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/static/css/iniciar.css">
+  <title>Formulario de Registro</title>
+</head>
+<body>
+  <center>
+    <img src="{{ url_for('static', filename='Catbot.png') }}" alt="Descripción de la imagen">
+  </center>
+  <section>
+    <form class="registro-form" action="/registro" method="post">
+        <h1>Regístrate</h1>
+        <div class="inputbox">
+            <ion-icon name="person-outline"></ion-icon>
+            <input type="text" name="usuario" required>
+            <label for="">Usuario</label>
+        </div>
+        <div class="inputbox">
+            <ion-icon name="lock-closed-outline"></ion-icon>
+            <input type="password" name="contraseña" required>
+            <label for="">Contraseña</label>
+        </div>
+        <button type="submit">Registrar</button>
+        <div class="register">
+            <p>¿Ya tienes una cuenta? <a href="/">Inicia Sesión</a></p>
+        </div>
+    </form>
+  </section>
+</body>
+</html>

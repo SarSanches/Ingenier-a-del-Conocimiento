@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+    <center>
+        <img src="{{ url_for('static', filename='Catbot.png')}}" alt="Descripción de la imagen">
+    </center>
+</head>
+<center>
+<body style="background-color: #B7D6DF;">
+    <h1>La salud de tu gato es: {{ descripcion }}</h1>
+
+
+
+<br>
+<br>
+
+    <div class="contenedor">
+        <a href="{{ url_for('frente') }}">
+            <img src="{{ url_for('static', filename='Volver.png') }}" alt="Descripción del botón" width="200" class="boton">
+        </a>
+    </div>
+
+    <style>
+        .contenedor {
+            position: relative;
+            height: 100px; /* ajusta la altura según sea necesario */
+        }
+    
+        .boton {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+    </style>    
+</body>
+</center>
+</html>
